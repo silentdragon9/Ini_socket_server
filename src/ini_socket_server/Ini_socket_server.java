@@ -97,7 +97,7 @@ public class Ini_socket_server {
             System.out.print("I Received :"+tmp);
             
             PrintStream pr = new PrintStream(sock.getOutputStream());
-            String str = "This is total RAM used";
+            String str = "Total RAM will be calculate at server";
             pr.println(str);
             
         }catch(IOException ex)
