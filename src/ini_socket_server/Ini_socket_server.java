@@ -87,10 +87,10 @@ public class Ini_socket_server {
         runtime.gc();
         // Calculate the used memory
         long memory = runtime.totalMemory() - runtime.freeMemory();
-        System.out.println("Total memory is bytes: " + runtime.totalMemory());
-        System.out.println("Total memory is megabytes: "+ runtime.totalMemory()/1048576);
-        System.out.println("Used memory is bytes: " + memory);
-        System.out.println("Used memory is megabytes: "+ bytesToMegabytes(memory));
+        System.out.println("Total memory is: " + runtime.totalMemory()+ " bytes");
+        System.out.println("Total memory is: "+ runtime.totalMemory()/1048576 + " Megabytes");
+        System.out.println("Used memory is: " + memory + " bytes");
+        System.out.println("Used memory is: "+ bytesToMegabytes(memory) + " Megabytes");
             
             BufferedReader ed = new BufferedReader(new InputStreamReader(sock.getInputStream()));
             String tmp = ed.readLine();
